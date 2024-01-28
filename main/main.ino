@@ -28,18 +28,18 @@ float sensor;
 
 void setup()
 {
-  pinMode(ena,1); // pwm pin for left motor
-  pinMode(enb,1); // pwm pin for right motor
-  pinMode(line_1,INPUT);
-  pinMode(line_2,INPUT);
-  pinMode(line_3,INPUT);
-  pinMode(line_4,INPUT);
-  pinMode(line_5,INPUT);
+  pinMode(ena, 1); // pwm pin for left motor
+  pinMode(enb, 1); // pwm pin for right motor
+  pinMode(line_1, INPUT);
+  pinMode(line_2, INPUT);
+  pinMode(line_3, INPUT);
+  pinMode(line_4, INPUT);
+  pinMode(line_5, INPUT);
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
   pinMode(in3, OUTPUT);
   pinMode(in4, OUTPUT);
-  Input =0; // line_3 == 0 is default, so we must adjust so that line_3 always is 0
+  Input = 0; // line_3 == 0 is default, so we must adjust so that line_3 always is 0
   
   myPID.SetSampleTime(1); // sampling time depends on car speed, the faster the sample the better
   myPID.SetMode(AUTOMATIC); 
